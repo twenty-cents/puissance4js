@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Puissance 4</title>
+    <link rel="stylesheet" href="/styles/puissance4.css">
+
+    <!-- Import Font Abel-->
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- The arrow -->
+    <div id="id-arrow" class="arrow"></div>
+    <div id="id-turn" class="turn"></div>
+    <div id="id-victory" class="victory hide"><span>Victoire !</span></div>
+    <div id="id-turn-player" class="token-red" style="top:516px;left:872px;"></div>
+    <div id="id-game-grid-front" class="game-grid-front">
+        <div class="game-grid-back"></div>
+    </div>
+
+    <!-- Modal window - Select players -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p class="txt-select">Sélection du mode du jeu :</p>
+            <img id="id-btn-cpu" src="images/but_cpu.png" alt="cpu" class="but-select" />
+            <img id="id-btn-human" src="images/but_human.png" alt="human" class="but-select" />
+        </div>
+    </div>
+
+    <!-- Modal window - End game -> Replay? -->
+    <div id="id-modal-replay" class="modal">
+        <div class="modal-content-yesno">
+            <p id="id-txt-victory" class="txt-select-victory"></p>
+            <p class="txt-select">Nouvelle partie?</p>
+            <img id="id-btn-no" src="images/but_no.png" alt="no" class="but-yesno" />
+            <img id="id-btn-yes" src="images/but_yes.png" alt="yes" class="but-yesno" />
+        </div>
+    </div>
+
+    <!-- The game -->
+    <script src="scripts/Token.js" type="text/javascript"></script>
+    <script src="scripts/player.js" type="text/javascript"></script>
+    <script src="scripts/puissance4.js" type="text/javascript"></script>
+    <script src="scripts/Game.js" type="text/javascript"></script>
+    <script src="scripts/app.js" type="text/javascript"></script>
+</body>
+
+</html>
